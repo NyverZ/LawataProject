@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-[80vh] flex items-center">
+    <section className="relative min-h-[80vh] flex items-center reveal delay-200">
       {/* Background */}
       <div className="absolute inset-0 -z-10">
         <img
@@ -28,7 +28,6 @@ export const HeroSection = () => {
             yang terletak di Kota Bima, Provinsi Nusa Tenggara Barat (NTB).
             Pantai ini berada tidak jauh dari pusat kota, sehingga mudah diakses
             oleh masyarakat lokal maupun wisatawan dari luar daerah.
-            
           </p>
           <Link to="/about" className="w-fit">
             <Button size="lg" variant="default">

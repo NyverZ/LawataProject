@@ -5,7 +5,6 @@ import App from "./App.tsx";
 import { BrowserRouter } from "react-router-dom";
 import { Navbar } from "./layout/Navbar.tsx";
 import { ThemeProvider } from "@/components/ThemeProvider.tsx";
-import { Footer } from "./components/Footer.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -13,7 +12,6 @@ createRoot(document.getElementById("root")!).render(
       <BrowserRouter>
         <Navbar />
         <App />
-        <Footer />
       </BrowserRouter>
     </ThemeProvider>
   </StrictMode>

@@ -2,7 +2,7 @@ import { Instagram, Facebook, Youtube } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="border-t bg-background text-foreground">
+    <footer className="border-t bg-background text-foreground reveal delay-200">
       <div className="container mx-auto px-6 py-12 text-center space-y-6">
 
         {/* Brand */}

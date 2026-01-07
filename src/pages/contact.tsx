@@ -24,7 +24,7 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="min-h-screen bg-background text-foreground">
+    <section className="min-h-screen bg-background text-foreground reveal delay-200">
       <div className="container mx-auto px-6 py-20 max-w-5xl">
         {/* Header */}
         <div className="text-center space-y-4 mb-16">

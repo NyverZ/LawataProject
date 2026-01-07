@@ -57,11 +57,7 @@ const NavigationSheet = () => {
             <Link
               key={item.label}
               to={item.href}
-              className="  rounded-md px-3 py-2
-    text-sm font-medium
-    text-muted-foreground
-    transition-colors duration-200
-    hover:bg-accent hover:text-foreground"
+              className="  rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors duration-200 hover:bg-accent hover:text-foreground "
             >
               {item.label}
             </Link>
@@ -135,7 +131,6 @@ export const Navbar = () => {
           variant="ghost"
           className="lg:hidden"
         ></Button>
-        <Button size="icon-sm" variant="ghost"></Button>
         <ModeToggle />
         <NavigationSheet />
       </div>

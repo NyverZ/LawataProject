@@ -6,18 +6,22 @@ import "./index.css";
 import GalleryPage from "./pages/gallery";
 import ContactPage from "./pages/contact";
 import { EmptyInputGroup } from "./pages/404Found";
+import { ScrollToTop } from "./components/ScrollToTop";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about/:aboutId?" element={<About />} />
-        <Route path="/activity/:activityId?" element={<Activity />} />
-        <Route path="/gallery/:galleryId?" element={<GalleryPage />} />
-        <Route path="/contact/:contactId?" element={<ContactPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/activity" element={<Activity />} />
+        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<EmptyInputGroup />} />
       </Routes>
+      <Footer />
+      <ScrollToTop />
     </>
   );
 }
