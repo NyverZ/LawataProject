@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 import { MenuIcon, Waves } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "../components/ui/button";
-import { type FormEvent, useState } from "react";
 import {
   Sheet,
   SheetContent,
@@ -14,7 +13,6 @@ import {
   SheetTrigger,
 } from "../components/ui/sheet";
 
-import { CommandInput, CommandDialog } from "../components/ui/command";
 import { ModeToggle } from "@/components/ModeToggle";
 
 const NavigationItems = [
@@ -27,8 +25,8 @@ const NavigationItems = [
     href: "/about",
   },
   {
-    label: "Activity",
-    href: "/activity",
+    label: "Facility",
+    href: "/facility",
   },
   {
     label: "Gallery",
@@ -68,30 +66,7 @@ const NavigationSheet = () => {
   );
 };
 
-type SearcCommentDialogProps = {
-  open: boolean;
-  onOpenChange: (open: boolean) => void;
-};
-
-const SearcCommentDialog = ({
-  onOpenChange,
-  open,
-}: SearcCommentDialogProps) => {
-  const handleSeachSubmit = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-  };
-  return (
-    <CommandDialog open={open} onOpenChange={onOpenChange}>
-      <form onSubmit={handleSeachSubmit}>
-        <CommandInput placeholder="Search products..." />
-      </form>
-    </CommandDialog>
-  );
-};
-
 export const Navbar = () => {
-  const [searchCommandDialogIsOpen, setSearchCommadDialogIsOpen] =
-    useState(false);
   return (
     <nav
       className={cn(
@@ -123,21 +98,10 @@ export const Navbar = () => {
           ))}
         </div>
       </div>
-
       <div className="flex items-center gap-4">
-        <Button
-          onClick={() => setSearchCommadDialogIsOpen(true)}
-          size="icon"
-          variant="ghost"
-          className="lg:hidden"
-        ></Button>
         <ModeToggle />
         <NavigationSheet />
       </div>
-      <SearcCommentDialog
-        open={searchCommandDialogIsOpen}
-        onOpenChange={setSearchCommadDialogIsOpen}
-      />
     </nav>
   );
 };

@@ -1,5 +1,6 @@
 export const ExperienceSection = () => (
   <section className="py-24 bg-muted/30 reveal delay-200">
+    <h1 className="text-2xl font-semibold mb-4 text-center ">Info Masuk</h1>
     <div className="container mx-auto px-6 grid md:grid-cols-3 gap-8">
       {[
         ["Suasana Tenang", "Cocok untuk bersantai"],

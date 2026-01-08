@@ -28,7 +28,7 @@ export default function ContactPage() {
       <div className="container mx-auto px-6 py-20 max-w-5xl">
         {/* Header */}
         <div className="text-center space-y-4 mb-16">
-          <h1 className="text-4xl font-bold">Hubungi Kami</h1>
+          <h1 className="text-4xl font-bold">Contact</h1>
           <p className="text-muted-foreground max-w-xl mx-auto">
             Mau tanya, kasih saran, atau sekadar menyapa? Tinggal kirim, nanti
             lanjut via WhatsApp.

@@ -9,7 +9,7 @@ const Home = () => {
       <HeroSection />
       <IntroSection />
       <ExperienceSection />
-      <ClosingSection />\
+      <ClosingSection />
     </>
   );
 };
