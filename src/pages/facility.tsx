@@ -3,10 +3,10 @@ import {
   Wifi,
   HousePlus,
   HouseHeart,
-  Toilet,
   BadgeDollarSign,
   House,
   Dice6,
+  Info,
 } from "lucide-react";
 import g1 from "@/assets/image/g1.webp";
 
@@ -50,7 +50,7 @@ export default function Facility() {
           </div>
 
           <div className="p-6 rounded-2xl border border-border bg-background space-y-4">
-            <Toilet className="text-muted-foreground" />
+            <Info className="text-muted-foreground" />
             <h3 className="text-xl font-semibold">Toilet Ummum</h3>
             <p className="text-muted-foreground leading-relaxed">
               Area sekitar pantai cocok untuk berjalan santai sambil menikmati

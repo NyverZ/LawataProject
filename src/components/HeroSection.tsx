@@ -20,14 +20,13 @@ export const HeroSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-xl text-white space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            Pantai Lawata
+            Pesona Pantai yang Menenangkan
           </h1>
 
           <p className="text-white/80 text-lg">
-            Pantai Lawata merupakan salah satu destinasi wisata bahari unggulan
-            yang terletak di Kota Bima, Provinsi Nusa Tenggara Barat (NTB).
-            Pantai ini berada tidak jauh dari pusat kota, sehingga mudah diakses
-            oleh masyarakat lokal maupun wisatawan dari luar daerah.
+            Pesona Pantai yang MenenangkanJelajahi pesona pantai dengan
+            pemandangan laut biru, pasir bersih, dan suasana alami yang cocok
+            untuk liburan, bersantai, dan mengabadikan momen terbaik.
           </p>
           <Link to="/about" className="w-fit">
             <Button size="lg" variant="default">
