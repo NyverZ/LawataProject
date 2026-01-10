@@ -1,5 +1,5 @@
 export const ExperienceSection = () => (
-  <section className="py-24 bg-muted/30 reveal delay-200">
+  <section className="py-24 bg-background reveal delay-200">
     <h1 className="text-2xl font-semibold mb-4 text-center ">
       Tiket Masuk Lawata
     </h1>

@@ -26,11 +26,11 @@ export default function Facility() {
         {/* Activity List */}
         <div className="grid gap-8 md:grid-cols-2">
           {/* Card */}
-          <div className="p-6 rounded-2xl border border-border bg-background space-y-4">
-            <HousePlus className="text-muted-foreground" />
-            <h3 className="text-xl font-semibold text-center">Gazebo</h3>
+          <div className="p-6 rounded-2xl border border-border bg-background space-y-4 ">
+            <HousePlus className="text-primary"  />
+            <h3 className="text-xl font-semibold">Gazebo</h3>
             <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
-              <img src={g1} alt="gazebo" width={485} />
+              <img src={g1} alt="gazebo" width={655} />
             </div>
             <p className="text-muted-foreground leading-relaxed">
               Waktu terbaik berkunjung ke Pantai Lawata adalah sore hari.
@@ -51,7 +51,7 @@ export default function Facility() {
 
           <div className="p-6 rounded-2xl border border-border bg-background space-y-4">
             <Info className="text-muted-foreground" />
-            <h3 className="text-xl font-semibold">Toilet Ummum</h3>
+            <h3 className="text-xl font-semibold">Pusat Informasi Wisata</h3>
             <p className="text-muted-foreground leading-relaxed">
               Area sekitar pantai cocok untuk berjalan santai sambil menikmati
               suara ombak dan suasana pesisir yang alami.
