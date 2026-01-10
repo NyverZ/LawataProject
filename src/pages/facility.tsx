@@ -1,14 +1,19 @@
 import {
   Coffee,
-  Wifi,
   HousePlus,
   HouseHeart,
   BadgeDollarSign,
-  House,
   Dice6,
   Info,
+  CircleParking,
 } from "lucide-react";
-import g1 from "@/assets/image/g1.webp";
+import Gazebo from "@/assets/image/Gazabo.webp";
+import Mushola from "@/assets/image/Mushola.webp";
+import Information from "@/assets/image/Information.webp";
+import Umkm from "@/assets/image/UMKM.webp";
+import AreaParkir from "@/assets/image/AreaParkir.webp";
+import Caffe from "@/assets/image/Caffe.webp";
+import Wahana from "@/assets/image/Wahana.webp";
 
 export default function Facility() {
   return (
@@ -26,84 +31,144 @@ export default function Facility() {
         {/* Activity List */}
         <div className="grid gap-8 md:grid-cols-2">
           {/* Card */}
-          <div className="p-6 rounded-2xl border border-border bg-background space-y-4 ">
-            <HousePlus className="text-primary"  />
+          <div
+            className="p-6 rounded-2xl border border-border bg-background 
+                space-y-4 flex flex-col items-center text-center"
+          >
+            <HousePlus className="text-primary" />
             <h3 className="text-xl font-semibold">Gazebo</h3>
             <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
-              <img src={g1} alt="gazebo" width={655} />
+              <img
+                src={Gazebo}
+                alt="gazebo"
+                className="w-full h-auto object-cover"
+              />
             </div>
             <p className="text-muted-foreground leading-relaxed">
-              Waktu terbaik berkunjung ke Pantai Lawata adalah sore hari.
-              Pengunjung dapat menikmati matahari terbenam dengan suasana yang
-              tenang dan angin laut yang sejuk.
+              Gazebo di area pantai menjadi tempat ideal untuk beristirahat,
+              berkumpul bersama keluarga, dan menikmati pemandangan laut dengan
+              suasana yang nyaman dan teduh.
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl border border-border bg-background space-y-4">
-            <HouseHeart className="text-muted-foreground" />
+          <div
+            className="p-6 rounded-2xl border border-border bg-background 
+                space-y-4 flex flex-col items-center text-center"
+          >
+            <HouseHeart className="text-primary" />
             <h3 className="text-xl font-semibold">Mushola</h3>
+            <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
+              <img
+                src={Mushola}
+                alt="mushola"
+                className="w-full h-auto object-cover"
+              />
+            </div>
             <p className="text-muted-foreground leading-relaxed">
-              Garis pantai, laut terbuka, dan cahaya alami menjadikan Pantai
-              Lawata spot yang menarik untuk fotografi lanskap maupun foto
-              santai.
+              Mushola tersedia bagi pengunjung untuk beribadah dengan tenang,
+              memberikan kenyamanan spiritual di tengah suasana pantai yang
+              damai.
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl border border-border bg-background space-y-4">
-            <Info className="text-muted-foreground" />
+          <div
+            className="p-6 rounded-2xl border border-border bg-background 
+                space-y-4 flex flex-col items-center text-center"
+          >
+            <Info className="text-primary" />
             <h3 className="text-xl font-semibold">Pusat Informasi Wisata</h3>
+            <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
+              <img
+                src={Information}
+                alt="info"
+                className="w-full h-auto object-cover"
+              />
+            </div>
             <p className="text-muted-foreground leading-relaxed">
-              Area sekitar pantai cocok untuk berjalan santai sambil menikmati
-              suara ombak dan suasana pesisir yang alami.
+              Pusat informasi wisata membantu pengunjung mendapatkan panduan,
+              informasi fasilitas, serta rekomendasi aktivitas selama berada di
+              kawasan Pantai Lawata.
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl border border-border bg-background space-y-4">
-            <BadgeDollarSign className="text-muted-foreground" />
+          <div
+            className="p-6 rounded-2xl border border-border bg-background 
+                space-y-4 flex flex-col items-center text-center"
+          >
+            <BadgeDollarSign className="text-primary" />
             <h3 className="text-xl font-semibold">Area UMKM</h3>
+            <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
+              <img
+                src={Umkm}
+                alt="umkm"
+                className="w-full h-auto object-cover"
+              />
+            </div>
             <p className="text-muted-foreground leading-relaxed">
-              Pantai Lawata sering menjadi tempat bersantai bersama teman atau
-              keluarga, menikmati waktu tanpa terburu-buru.
+              Area UMKM menghadirkan beragam kuliner dan produk lokal yang dapat
+              dinikmati sambil bersantai, mendukung ekonomi masyarakat sekitar
+              pantai.
             </p>
           </div>
         </div>
         <div className="grid gap-8 md:grid-cols-2">
           {/* Card */}
-          <div className="p-6 rounded-2xl border border-border bg-background space-y-4">
-            <House className="text-muted-foreground" />
-            <h3 className="text-xl font-semibold">Home Stay</h3>
+          <div
+            className="p-6 rounded-2xl border border-border bg-background 
+                space-y-4 flex flex-col items-center text-center"
+          >
+            <CircleParking className="text-primary" />
+            <h3 className="text-xl font-semibold">Area Parkir</h3>
+            <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
+              <img
+                src={AreaParkir}
+                alt="areparkir"
+                className="w-full h-auto object-cover"
+              />
+            </div>
             <p className="text-muted-foreground leading-relaxed">
-              Waktu terbaik berkunjung ke Pantai Lawata adalah sore hari.
-              Pengunjung dapat menikmati matahari terbenam dengan suasana yang
-              tenang dan angin laut yang sejuk.
+              Area parkir yang luas dan tertata memudahkan pengunjung untuk
+              mengakses pantai dengan aman dan nyaman, baik kendaraan roda dua
+              maupun roda empat.
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl border border-border bg-background space-y-4">
-            <Coffee className="text-muted-foreground" />
-            <h3 className="text-xl font-semibold">Caffe</h3>
+          <div
+            className="p-6 rounded-2xl border border-border bg-background 
+                space-y-4 flex flex-col items-center text-center"
+          >
+            <Coffee className="text-primary" />
+            <h3 className="text-xl font-semibold">Cafe</h3>
+            <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
+              <img
+                src={Caffe}
+                alt="caffe"
+                className="w-full h-auto object-cover"
+              />
+            </div>
             <p className="text-muted-foreground leading-relaxed">
-              Garis pantai, laut terbuka, dan cahaya alami menjadikan Pantai
-              Lawata spot yang menarik untuk fotografi lanskap maupun foto
-              santai.
+              Caffe di sekitar pantai menawarkan tempat santai untuk menikmati
+              minuman dan hidangan ringan sambil merasakan angin laut dan
+              suasana pesisir yang menenangkan.
             </p>
           </div>
-
-          <div className="p-6 rounded-2xl border border-border bg-background space-y-4">
-            <Dice6 className="text-muted-foreground" />
+          <div
+            className="p-6 rounded-2xl border border-border bg-background 
+                space-y-4 flex flex-col items-center text-center"
+          >
+            <Dice6 className="text-primary" />
             <h3 className="text-xl font-semibold">Wahana Permainan</h3>
+            <div className="overflow-hidden rounded-2xl border border-border shadow-lg w-full">
+              <img
+                src={Wahana}
+                alt="wahana"
+                className="w-full h-auto object-cover"
+              />
+            </div>
             <p className="text-muted-foreground leading-relaxed">
-              Area sekitar pantai cocok untuk berjalan santai sambil menikmati
-              suara ombak dan suasana pesisir yang alami.
-            </p>
-          </div>
-
-          <div className="p-6 rounded-2xl border border-border bg-background space-y-4">
-            <Wifi className="text-muted-foreground" />
-            <h3 className="text-xl font-semibold">Free WIFI</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Pantai Lawata sering menjadi tempat bersantai bersama teman atau
-              keluarga, menikmati waktu tanpa terburu-buru.
+              Wahana permainan menjadi pilihan hiburan bagi anak-anak maupun
+              dewasa, menambah keseruan liburan dengan aktivitas ringan di
+              kawasan pantai.
             </p>
           </div>
         </div>
