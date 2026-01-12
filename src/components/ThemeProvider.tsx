@@ -21,18 +21,9 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
     root.style.colorScheme = appliedTheme;
   }, [theme]);
 
- const value = {
-  theme,
-  setTheme: (t: Theme) => {
-    setTheme(t);
-  },
-};
-
-
- return (
-  <ThemeProviderContext.Provider value={{ theme, setTheme }}>
-    {children}
-  </ThemeProviderContext.Provider>
-);
-
+  return (
+    <ThemeProviderContext.Provider value={{ theme, setTheme }}>
+      {children}
+    </ThemeProviderContext.Provider>
+  );
 }
