@@ -1,6 +1,6 @@
 import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { useTheme } from "@/components/ThemeProvider";
+import { useTheme } from "./theme-context";
 
 export function ModeToggle() {
   const { theme, setTheme } = useTheme();
@@ -17,7 +17,7 @@ export function ModeToggle() {
   return (
     <Button
       variant="outline"
-      size="icon"
+      size="sm"
       onClick={toggleTheme}
       className="relative overflow-hidden"
     >
