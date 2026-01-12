@@ -21,6 +21,7 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
     root.style.colorScheme = appliedTheme;
   }, [theme]);
 
+
   return (
     <ThemeProviderContext.Provider value={{ theme, setTheme }}>
       {children}
