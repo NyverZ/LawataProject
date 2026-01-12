@@ -2,8 +2,15 @@ import { useEffect, useState } from "react";
 import { ThemeProviderContext } from "./theme-context";
 import type { Theme, ThemeProviderProps } from "./theme-types";
 
-export function ThemeProvider({ children }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>("system");
+export function ThemeProvider({
+  children,
+  defaultTheme = "system",
+  storageKey = "theme",
+}: ThemeProviderProps) {
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window === "undefined") return defaultTheme;
+    return (localStorage.getItem(storageKey) as Theme) || defaultTheme;
+  });
 
   useEffect(() => {
     const root = document.documentElement;
@@ -19,8 +26,9 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
 
     root.classList.add(appliedTheme);
     root.style.colorScheme = appliedTheme;
-  }, [theme]);
 
+    localStorage.setItem(storageKey, theme);
+  }, [theme, storageKey]);
 
   return (
     <ThemeProviderContext.Provider value={{ theme, setTheme }}>
