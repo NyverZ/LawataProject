@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="src/assets/Lawata.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lawata</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
     <script>
       const theme = localStorage.getItem("theme");
       if (theme === "dark") {
@@ -16,5 +11,10 @@
         document.documentElement.style.colorScheme = "dark";
       }
     </script>
+    <title>Lawata</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
