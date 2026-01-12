@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/components/ThemeProvider.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider defaultTheme="dark" storageKey="theme">
+    <ThemeProvider storageKey="theme">
       <BrowserRouter>
         <Navbar />
         <App />
