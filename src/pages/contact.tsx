@@ -12,7 +12,7 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const phoneNumber = "6285333900962"; // GANTI dengan nomor WA lo
+    const phoneNumber = "6285333900962";
     const text = `Halo admin Pantai Lawata ,Nama: ${name} Email: ${email} Pesan: ${message}
     `;
 
