@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { useTheme } from "@/components/theme-context";
+import { useTheme } from "../lib/theme-context";
 
 function ShowTheme() {
   const { theme } = useTheme();
@@ -11,7 +11,7 @@ test("defaultTheme dipakai", () => {
   const { getByTestId } = render(
     <ThemeProvider defaultTheme="system">
       <ShowTheme />
-    </ThemeProvider>
+    </ThemeProvider>,
   );
 
   expect(getByTestId("theme").textContent).toBe("system");
