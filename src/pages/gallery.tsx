@@ -35,12 +35,14 @@ export default function GalleryPage() {
               className="reveal space-y-3"
               style={{ transitionDelay: `${(index + 1) * 100}ms` }}
             >
+
               <div className="overflow-hidden rounded-2xl border border-border shadow-lg">
                 <img
                   src={item.image}
                   alt={item.alt}
                   className="w-full h-full object-cover transition duration-500 hover:scale-105"
                 />
+                
               </div>
 
               <p className="text-sm text-muted-foreground leading-relaxed">
