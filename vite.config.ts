@@ -11,6 +11,18 @@ export default defineConfig({
       "@": path.resolve(__dirname, "src"),
     },
   },
+  build: {
+    chunkSizeWarningLimit: 900,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ["react", "react-dom", "react-router", "react-router-dom"],
+          motion: ["framer-motion"],
+          lucide: ["lucide-react"],
+        },
+      },
+    },
+  },
   test: {
     environment: "jsdom",
     globals: true,

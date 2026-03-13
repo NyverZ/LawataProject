@@ -18,7 +18,7 @@ function App() {
         <Route path="/facility" element={<Facility />} />
         <Route path="/gallery" element={<GalleryPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="*" element={<EmptyInputGroup />} />z
+        <Route path="*" element={<EmptyInputGroup />} />
       </Routes>
       <Footer />
       <ScrollToTop />
